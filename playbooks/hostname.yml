@@ -1,5 +1,5 @@
 ---
-- name: Kerää faktat
+- name: Hostname
   hosts: routers
   gather_facts: false
 
