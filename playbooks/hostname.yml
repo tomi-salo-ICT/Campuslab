@@ -1,0 +1,10 @@
+---
+- name: Kerää faktat
+  hosts: routers
+  gather_facts: false
+
+  tasks:
+    - name: muuta hostname
+      cisco.ios.ios_hostname:
+        config:
+          hostname: "Branch-{{ inventory_hostname }}"
